@@ -1,9 +1,10 @@
+
 module Egalitarian
-  class Standing < ::ActiveRecord::Base
+  module Standing
 
-    belongs_to :forum
-    belongs_to :user
+    def self.rank
+      10
+    end
 
-    validates_presence_of :ranking
   end
 end
